@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A79ED7EC38AC92FDA4107AA /* Pods_SendbirdLiveBanubaSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E580E5BB98D2B725A3FE7E50 /* Pods_SendbirdLiveBanubaSample.framework */; };
+		522EFCEC2942429500A14C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EFCEB2942429500A14C91 /* AppDelegate.swift */; };
+		522EFCEE2942429500A14C91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EFCED2942429500A14C91 /* SceneDelegate.swift */; };
+		522EFCF02942429500A14C91 /* LiveEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EFCEF2942429500A14C91 /* LiveEventViewController.swift */; };
+		522EFCF32942429500A14C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522EFCF12942429500A14C91 /* Main.storyboard */; };
+		522EFCF52942429600A14C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522EFCF42942429600A14C91 /* Assets.xcassets */; };
+		522EFCF82942429600A14C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522EFCF62942429600A14C91 /* LaunchScreen.storyboard */; };
+		522EFD1F29424DAA00A14C91 /* effects in Resources */ = {isa = PBXBuildFile; fileRef = 522EFD1E29424DA900A14C91 /* effects */; };
+		522EFD212946CBD600A14C91 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EFD202946CBD600A14C91 /* SignInViewController.swift */; };
+		522EFD232946CBDE00A14C91 /* CreateLiveEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EFD222946CBDE00A14C91 /* CreateLiveEventViewController.swift */; };
+		522EFD252946CEF400A14C91 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EFD242946CEF400A14C91 /* Credentials.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A2248881AACEF5D4F01FD58 /* Pods-SendbirdLiveBanubaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendbirdLiveBanubaSample.debug.xcconfig"; path = "Target Support Files/Pods-SendbirdLiveBanubaSample/Pods-SendbirdLiveBanubaSample.debug.xcconfig"; sourceTree = "<group>"; };
+		522EFCE82942429500A14C91 /* SendbirdLiveBanubaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendbirdLiveBanubaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		522EFCEB2942429500A14C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		522EFCED2942429500A14C91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		522EFCEF2942429500A14C91 /* LiveEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveEventViewController.swift; sourceTree = "<group>"; };
+		522EFCF22942429500A14C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		522EFCF42942429600A14C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		522EFCF72942429600A14C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		522EFCF92942429600A14C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522EFD1A29424C6900A14C91 /* SendbirdLiveSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SendbirdLiveSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		522EFD1E29424DA900A14C91 /* effects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = effects; sourceTree = "<group>"; };
+		522EFD202946CBD600A14C91 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		522EFD222946CBDE00A14C91 /* CreateLiveEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLiveEventViewController.swift; sourceTree = "<group>"; };
+		522EFD242946CEF400A14C91 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		E580E5BB98D2B725A3FE7E50 /* Pods_SendbirdLiveBanubaSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendbirdLiveBanubaSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75907CA121FC1537AF69F5B /* Pods-SendbirdLiveBanubaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendbirdLiveBanubaSample.release.xcconfig"; path = "Target Support Files/Pods-SendbirdLiveBanubaSample/Pods-SendbirdLiveBanubaSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		522EFCE52942429500A14C91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A79ED7EC38AC92FDA4107AA /* Pods_SendbirdLiveBanubaSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05241F326972F61F4A05B886 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A2248881AACEF5D4F01FD58 /* Pods-SendbirdLiveBanubaSample.debug.xcconfig */,
+				E75907CA121FC1537AF69F5B /* Pods-SendbirdLiveBanubaSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		522EFCDF2942429500A14C91 = {
+			isa = PBXGroup;
+			children = (
+				522EFCEA2942429500A14C91 /* SendbirdLiveBanubaSample */,
+				522EFCE92942429500A14C91 /* Products */,
+				05241F326972F61F4A05B886 /* Pods */,
+				C52AEA52793B4BF7998847C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		522EFCE92942429500A14C91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				522EFCE82942429500A14C91 /* SendbirdLiveBanubaSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		522EFCEA2942429500A14C91 /* SendbirdLiveBanubaSample */ = {
+			isa = PBXGroup;
+			children = (
+				522EFCEB2942429500A14C91 /* AppDelegate.swift */,
+				522EFCED2942429500A14C91 /* SceneDelegate.swift */,
+				522EFD242946CEF400A14C91 /* Credentials.swift */,
+				522EFD202946CBD600A14C91 /* SignInViewController.swift */,
+				522EFD222946CBDE00A14C91 /* CreateLiveEventViewController.swift */,
+				522EFCEF2942429500A14C91 /* LiveEventViewController.swift */,
+				522EFD1E29424DA900A14C91 /* effects */,
+				522EFCF12942429500A14C91 /* Main.storyboard */,
+				522EFCF42942429600A14C91 /* Assets.xcassets */,
+				522EFCF62942429600A14C91 /* LaunchScreen.storyboard */,
+				522EFCF92942429600A14C91 /* Info.plist */,
+			);
+			path = SendbirdLiveBanubaSample;
+			sourceTree = "<group>";
+		};
+		C52AEA52793B4BF7998847C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				522EFD1A29424C6900A14C91 /* SendbirdLiveSDK.framework */,
+				E580E5BB98D2B725A3FE7E50 /* Pods_SendbirdLiveBanubaSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		522EFCE72942429500A14C91 /* SendbirdLiveBanubaSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522EFCFC2942429600A14C91 /* Build configuration list for PBXNativeTarget "SendbirdLiveBanubaSample" */;
+			buildPhases = (
+				2286CFB8979A71E15B6263C6 /* [CP] Check Pods Manifest.lock */,
+				522EFCE42942429500A14C91 /* Sources */,
+				522EFCE52942429500A14C91 /* Frameworks */,
+				522EFCE62942429500A14C91 /* Resources */,
+				3C71BA03E461C9CE9193362B /* [CP] Embed Pods Frameworks */,
+				6E4A25F2995F02BEFEF5766B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendbirdLiveBanubaSample;
+			packageProductDependencies = (
+			);
+			productName = SendbirdLiveBanubaSample;
+			productReference = 522EFCE82942429500A14C91 /* SendbirdLiveBanubaSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		522EFCE02942429500A14C91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					522EFCE72942429500A14C91 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 522EFCE32942429500A14C91 /* Build configuration list for PBXProject "SendbirdLiveBanubaSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 522EFCDF2942429500A14C91;
+			packageReferences = (
+			);
+			productRefGroup = 522EFCE92942429500A14C91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				522EFCE72942429500A14C91 /* SendbirdLiveBanubaSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		522EFCE62942429500A14C91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522EFCF82942429600A14C91 /* LaunchScreen.storyboard in Resources */,
+				522EFCF52942429600A14C91 /* Assets.xcassets in Resources */,
+				522EFCF32942429500A14C91 /* Main.storyboard in Resources */,
+				522EFD1F29424DAA00A14C91 /* effects in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2286CFB8979A71E15B6263C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SendbirdLiveBanubaSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C71BA03E461C9CE9193362B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendbirdLiveBanubaSample/Pods-SendbirdLiveBanubaSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendbirdLiveBanubaSample/Pods-SendbirdLiveBanubaSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SendbirdLiveBanubaSample/Pods-SendbirdLiveBanubaSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E4A25F2995F02BEFEF5766B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendbirdLiveBanubaSample/Pods-SendbirdLiveBanubaSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendbirdLiveBanubaSample/Pods-SendbirdLiveBanubaSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SendbirdLiveBanubaSample/Pods-SendbirdLiveBanubaSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		522EFCE42942429500A14C91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522EFD252946CEF400A14C91 /* Credentials.swift in Sources */,
+				522EFD212946CBD600A14C91 /* SignInViewController.swift in Sources */,
+				522EFCF02942429500A14C91 /* LiveEventViewController.swift in Sources */,
+				522EFCEC2942429500A14C91 /* AppDelegate.swift in Sources */,
+				522EFCEE2942429500A14C91 /* SceneDelegate.swift in Sources */,
+				522EFD232946CBDE00A14C91 /* CreateLiveEventViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		522EFCF12942429500A14C91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				522EFCF22942429500A14C91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		522EFCF62942429600A14C91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				522EFCF72942429600A14C91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		522EFCFA2942429600A14C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		522EFCFB2942429600A14C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		522EFCFD2942429600A14C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2248881AACEF5D4F01FD58 /* Pods-SendbirdLiveBanubaSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RM4A5PXTUX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendbirdLiveBanubaSample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use your camera to take photos or stream video for a live event.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This will allow you to use microphone in a live event.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This will allow you to send photos and videos in a live event.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This will allow you to send photos and videos in a live event.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.test.SendbirdLiveBanubaSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		522EFCFE2942429600A14C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75907CA121FC1537AF69F5B /* Pods-SendbirdLiveBanubaSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RM4A5PXTUX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendbirdLiveBanubaSample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use your camera to take photos or stream video for a live event.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This will allow you to use microphone in a live event.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This will allow you to send photos and videos in a live event.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This will allow you to send photos and videos in a live event.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.test.SendbirdLiveBanubaSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		522EFCE32942429500A14C91 /* Build configuration list for PBXProject "SendbirdLiveBanubaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522EFCFA2942429600A14C91 /* Debug */,
+				522EFCFB2942429600A14C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		522EFCFC2942429600A14C91 /* Build configuration list for PBXNativeTarget "SendbirdLiveBanubaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522EFCFD2942429600A14C91 /* Debug */,
+				522EFCFE2942429600A14C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 522EFCE02942429500A14C91 /* Project object */;
+}

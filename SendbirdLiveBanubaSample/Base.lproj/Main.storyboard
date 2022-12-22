@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Suy-x9-W1x">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live Event View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LiveEventViewController" customModule="SendbirdLiveBanubaSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dg7-cy-2RS" customClass="EffectPlayerView" customModule="BNBSdkApi">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCV-CO-2pn">
+                                <rect key="frame" x="340" y="75" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="H77-JN-WIZ"/>
+                                    <constraint firstAttribute="width" constant="21" id="vxJ-GF-iXI"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="iconClose">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitLiveEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbL-Ot-OAH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R29-if-S4m">
+                                <rect key="frame" x="178.66666666666666" y="75" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dg7-cy-2RS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C2i-BR-XOD"/>
+                            <constraint firstItem="LCV-CO-2pn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="R29-if-S4m" secondAttribute="trailing" id="EZz-JS-jY0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dg7-cy-2RS" secondAttribute="trailing" id="Eeb-WZ-Dtd"/>
+                            <constraint firstItem="R29-if-S4m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="16" id="ILI-cE-lan"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dg7-cy-2RS" secondAttribute="bottom" id="JFU-iK-Nnc"/>
+                            <constraint firstItem="LCV-CO-2pn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="16" id="V1n-Tb-Tse"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LCV-CO-2pn" secondAttribute="trailing" constant="16" id="XYb-mH-J7B"/>
+                            <constraint firstItem="dg7-cy-2RS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bra-np-oMh"/>
+                            <constraint firstItem="R29-if-S4m" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hgZ-lS-wEw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="liveEventIdLabel" destination="R29-if-S4m" id="1iM-yE-z72"/>
+                        <outlet property="localVideo" destination="dg7-cy-2RS" id="BYU-ed-Fzd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="23"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="h3E-YK-zLj">
+            <objects>
+                <viewController id="Suy-x9-W1x" customClass="SignInViewController" customModule="SendbirdLiveBanubaSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqy-rh-BDG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oJ-nR-gZ7">
+                                <rect key="frame" x="16" y="408.66666666666669" width="361" height="52"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1764705882" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="kKa-6j-3RC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
+                                <connections>
+                                    <action selector="signIn:" destination="Suy-x9-W1x" eventType="touchUpInside" id="J7n-9l-PJa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFs-1N-4mF">
+                                <rect key="frame" x="16" y="324.66666666666669" width="361" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="jMm-gT-Xij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MhT-Cr-hhg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6oJ-nR-gZ7" firstAttribute="leading" secondItem="MhT-Cr-hhg" secondAttribute="leading" constant="16" id="1Ed-54-9bZ"/>
+                            <constraint firstItem="MhT-Cr-hhg" firstAttribute="trailing" secondItem="LFs-1N-4mF" secondAttribute="trailing" constant="16" id="6WG-dk-K0q"/>
+                            <constraint firstItem="LFs-1N-4mF" firstAttribute="centerY" secondItem="MhT-Cr-hhg" secondAttribute="centerY" multiplier="0.8" id="BKh-0L-UEb"/>
+                            <constraint firstItem="6oJ-nR-gZ7" firstAttribute="top" secondItem="LFs-1N-4mF" secondAttribute="bottom" constant="32" id="HL8-fN-x49"/>
+                            <constraint firstItem="LFs-1N-4mF" firstAttribute="leading" secondItem="MhT-Cr-hhg" secondAttribute="leading" constant="16" id="Z7W-vZ-38d"/>
+                            <constraint firstItem="MhT-Cr-hhg" firstAttribute="trailing" secondItem="6oJ-nR-gZ7" secondAttribute="trailing" constant="16" id="dyk-p3-GZb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userIdTextField" destination="LFs-1N-4mF" id="8Ep-jf-eVM"/>
+                        <segue destination="QjC-jp-CqA" kind="presentation" identifier="SignIn" modalPresentationStyle="fullScreen" id="Hvr-Rc-XI5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8k-J3-1fl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521" y="23"/>
+        </scene>
+        <!--Create Live Event View Controller-->
+        <scene sceneID="pgR-IT-Dfg">
+            <objects>
+                <viewController id="QjC-jp-CqA" customClass="CreateLiveEventViewController" customModule="SendbirdLiveBanubaSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J1z-4o-Re2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plD-g5-Op4">
+                                <rect key="frame" x="32" y="412.66666666666669" width="329" height="52"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1764705882" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="UVb-kN-hR9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Create A New Event"/>
+                                <connections>
+                                    <action selector="createLiveEvent:" destination="QjC-jp-CqA" eventType="touchUpInside" id="NNM-0b-LRt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w3y-yR-eFV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w3y-yR-eFV" firstAttribute="trailing" secondItem="plD-g5-Op4" secondAttribute="trailing" constant="32" id="2l5-AG-GC8"/>
+                            <constraint firstItem="plD-g5-Op4" firstAttribute="leading" secondItem="w3y-yR-eFV" secondAttribute="leading" constant="32" id="D1B-rt-WXO"/>
+                            <constraint firstItem="plD-g5-Op4" firstAttribute="centerY" secondItem="w3y-yR-eFV" secondAttribute="centerY" id="ZEU-wM-iyW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="EnterLiveEvent" modalPresentationStyle="fullScreen" id="yh0-OJ-0G5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wGF-hp-eZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconClose" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
