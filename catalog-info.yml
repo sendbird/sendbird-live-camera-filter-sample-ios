@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sendbird-live-camera-filter-sample-ios
+  descritpion: iOS Sample for Sendbird Live camera filter integration
+  annotations:
+    github.com/project-slug: sendbird/sendbird-live-camera-filter-sample-ios
+spec:
+  type: sample
+  lifecycle: production
+  owner: dep-client-platform
+  system: sendbird-live
+
